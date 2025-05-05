@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.title{
+    background-color: #EF5350;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    font-size: 40px;
+}
+
+.control-centre{
+    background-color: rgb(201, 249, 251);
+    height: 110px;
+    width: 100%;
+}
+.control-input{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.control-input select{
+    height: 25px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 15px;
+
+}
+
+
+.control-output{
+    height: 50px;
+    /* background-color: darkmagenta; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control-output button{
+    height: 35px;
+    width: 150px;
+    font-size: 16px;
+    font-family: monospace;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* // Rendering */
+
+.pokemon-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    background-color: lightcyan;
+}
+.pokemon-card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 160px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+}
+.pokemon-card img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Spinner */
+.loader {
+    display: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.pokemon-card {
+    animation: fadeIn 0.3s ease-in-out;
+}
