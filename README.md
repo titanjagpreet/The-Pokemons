@@ -17,7 +17,7 @@ A simple web application built using **HTML**, **CSS**, and **JavaScript** that 
 
 ## 🖼️ Preview
 
-![preview](https://user-images.githubusercontent.com/your-screenshot-url.png)
+![preview](https://raw.githubusercontent.com/titanjagpreet/The-Pokemons/refs/heads/main/assets/preview.png)
 
 <br>
 
